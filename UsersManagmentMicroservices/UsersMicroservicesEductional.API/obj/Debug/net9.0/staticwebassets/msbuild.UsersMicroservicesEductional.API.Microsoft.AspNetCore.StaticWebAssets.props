@@ -1,0 +1,58 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Upload\1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>UsersMicroservicesEductional.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UsersMicroservicesEductional.API</BasePath>
+      <RelativePath>Upload/1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tvo4860eqr</Fingerprint>
+      <Integrity>B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Upload\1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Upload\39fa5e1a-511b-4778-b2d8-da780d526c67.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>UsersMicroservicesEductional.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UsersMicroservicesEductional.API</BasePath>
+      <RelativePath>Upload/39fa5e1a-511b-4778-b2d8-da780d526c67.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wk5oapj5xf</Fingerprint>
+      <Integrity>QPA9ZTfDrogR/wKOJjoraA//626lxGq5NPl4XZ5E7vM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Upload\39fa5e1a-511b-4778-b2d8-da780d526c67.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Upload\d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>UsersMicroservicesEductional.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/UsersMicroservicesEductional.API</BasePath>
+      <RelativePath>Upload/d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tvo4860eqr</Fingerprint>
+      <Integrity>B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Upload\d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

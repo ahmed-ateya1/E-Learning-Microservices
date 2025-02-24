@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg",
+      "PackagePath": "staticwebassets\\Upload\\1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg"
+    },
+    {
+      "Id": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\39fa5e1a-511b-4778-b2d8-da780d526c67.jpg",
+      "PackagePath": "staticwebassets\\Upload\\39fa5e1a-511b-4778-b2d8-da780d526c67.jpg"
+    },
+    {
+      "Id": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg",
+      "PackagePath": "staticwebassets\\Upload\\d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.UsersMicroservicesEductional.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.UsersMicroservicesEductional.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.UsersMicroservicesEductional.API.props",
+      "PackagePath": "build\\UsersMicroservicesEductional.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.UsersMicroservicesEductional.API.props",
+      "PackagePath": "buildMultiTargeting\\UsersMicroservicesEductional.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.UsersMicroservicesEductional.API.props",
+      "PackagePath": "buildTransitive\\UsersMicroservicesEductional.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

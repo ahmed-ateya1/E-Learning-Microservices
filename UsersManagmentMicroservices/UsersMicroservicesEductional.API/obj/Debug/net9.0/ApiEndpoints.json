@@ -1,0 +1,196 @@
+[
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "AddRoleAsync",
+    "RelativePath": "api/Account/addrole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.AddRoleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Account/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.ChangePasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "IsEmailInUse",
+    "RelativePath": "api/Account/check-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Account/forgotPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "forgotPassword",
+        "Type": "UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.ForgotPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "LoginAsync",
+    "RelativePath": "api/Account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.AuthenticationResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Account/refreshtoken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "RegisterCleintAsync",
+    "RelativePath": "api/Account/register-Client",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FullName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProfilePicture",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.AuthenticationResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Account/resetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "resetPassword",
+        "Type": "UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.ResetPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "RevokeToken",
+    "RelativePath": "api/Account/revokeToken",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "revokTokenDTO",
+        "Type": "UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.RevokTokenDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "VerifyOtp",
+    "RelativePath": "api/Account/verify-otp",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.OtpVerificationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CoursesManagmentMicroservices.Infrastructure/1.0.0": {
+        "dependencies": {
+          "CoursesManagmentMicroservices.Core": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.2"
+        },
+        "runtime": {
+          "CoursesManagmentMicroservices.Infrastructure.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/9.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "9.0.2"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6610"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.2": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6610"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/9.0.2": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.225.6610"
+          }
+        }
+      },
+      "CoursesManagmentMicroservices.Core/1.0.0": {
+        "runtime": {
+          "CoursesManagmentMicroservices.Core.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CoursesManagmentMicroservices.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I0O/270E/lUNqbBxlRVjxKOMZyYjP88dpEgQTveml+h2lTzAP4vbawLVwjS9SC7lKaU893bwyyNz0IVJYsm9EA==",
+      "path": "microsoft.extensions.configuration.abstractions/9.0.2",
+      "hashPath": "microsoft.extensions.configuration.abstractions.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MNe7GSTBf3jQx5vYrXF0NZvn6l7hUKF6J54ENfAgCO8y6xjN1XUmKKWG464LP2ye6QqDiA1dkaWEZBYnhoZzjg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.2",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/9.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-puBMtKe/wLuYa7H6docBkLlfec+h8L35DXqsDKKJgW0WY5oCwJ3cBJKcDaZchv6knAyqOMfsl6VUbaR++E5LXA==",
+      "path": "microsoft.extensions.primitives/9.0.2",
+      "hashPath": "microsoft.extensions.primitives.9.0.2.nupkg.sha512"
+    },
+    "CoursesManagmentMicroservices.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

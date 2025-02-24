@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "Hash": "sB6EOd336LxTUK51/a4gB4TNsrxvn5mhy95oTXZml4g=",
+  "Source": "UsersMicroservicesEductional.API",
+  "BasePath": "_content/UsersMicroservicesEductional.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "UsersMicroservicesEductional.API\\wwwroot",
+      "Source": "UsersMicroservicesEductional.API",
+      "ContentRoot": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\",
+      "BasePath": "_content/UsersMicroservicesEductional.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg",
+      "SourceId": "UsersMicroservicesEductional.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\",
+      "BasePath": "_content/UsersMicroservicesEductional.API",
+      "RelativePath": "Upload/1b5ff3dd-7215-4987-a0fc-fd5950a6e74d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tvo4860eqr",
+      "Integrity": "B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg"
+    },
+    {
+      "Identity": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\39fa5e1a-511b-4778-b2d8-da780d526c67.jpg",
+      "SourceId": "UsersMicroservicesEductional.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\",
+      "BasePath": "_content/UsersMicroservicesEductional.API",
+      "RelativePath": "Upload/39fa5e1a-511b-4778-b2d8-da780d526c67#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wk5oapj5xf",
+      "Integrity": "QPA9ZTfDrogR/wKOJjoraA//626lxGq5NPl4XZ5E7vM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\39fa5e1a-511b-4778-b2d8-da780d526c67.jpg"
+    },
+    {
+      "Identity": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg",
+      "SourceId": "UsersMicroservicesEductional.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\",
+      "BasePath": "_content/UsersMicroservicesEductional.API",
+      "RelativePath": "Upload/d37e55be-d50d-4bca-9433-f8ffb0331e4b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tvo4860eqr",
+      "Integrity": "B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Upload/1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg",
+      "AssetFile": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 10:21:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4="
+        }
+      ]
+    },
+    {
+      "Route": "Upload/1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.tvo4860eqr.jpg",
+      "AssetFile": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 10:21:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tvo4860eqr"
+        },
+        {
+          "Name": "label",
+          "Value": "Upload/1b5ff3dd-7215-4987-a0fc-fd5950a6e74d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4="
+        }
+      ]
+    },
+    {
+      "Route": "Upload/39fa5e1a-511b-4778-b2d8-da780d526c67.jpg",
+      "AssetFile": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\39fa5e1a-511b-4778-b2d8-da780d526c67.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14054"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QPA9ZTfDrogR/wKOJjoraA//626lxGq5NPl4XZ5E7vM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 06:00:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QPA9ZTfDrogR/wKOJjoraA//626lxGq5NPl4XZ5E7vM="
+        }
+      ]
+    },
+    {
+      "Route": "Upload/39fa5e1a-511b-4778-b2d8-da780d526c67.wk5oapj5xf.jpg",
+      "AssetFile": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\39fa5e1a-511b-4778-b2d8-da780d526c67.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14054"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QPA9ZTfDrogR/wKOJjoraA//626lxGq5NPl4XZ5E7vM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Feb 2025 06:00:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wk5oapj5xf"
+        },
+        {
+          "Name": "label",
+          "Value": "Upload/39fa5e1a-511b-4778-b2d8-da780d526c67.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QPA9ZTfDrogR/wKOJjoraA//626lxGq5NPl4XZ5E7vM="
+        }
+      ]
+    },
+    {
+      "Route": "Upload/d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg",
+      "AssetFile": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 10:14:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4="
+        }
+      ]
+    },
+    {
+      "Route": "Upload/d37e55be-d50d-4bca-9433-f8ffb0331e4b.tvo4860eqr.jpg",
+      "AssetFile": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "266240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 10:14:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tvo4860eqr"
+        },
+        {
+          "Name": "label",
+          "Value": "Upload/d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-B0liXzAyruqKwiLcL6c23N58bTqVoGBVOzPuX0fUaX4="
+        }
+      ]
+    }
+  ]
+}

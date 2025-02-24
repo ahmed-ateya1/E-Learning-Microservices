@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "DN+JFP8Hm8KQt+Fpefu3CWh//OAXcb9XdBhFcAy5r9c=",
+  "Source": "CoursesManagmentMicroservices.API",
+  "BasePath": "_content/CoursesManagmentMicroservices.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

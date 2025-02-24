@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UsersMicroservicesEductional.API</name>
+    </assembly>
+    <members>
+        <member name="T:UsersMicroservicesEductional.API.Controllers.AccountController">
+            <summary>
+            Manages user accounts, including registration, login, password reset, roles, and token handling.
+            </summary>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.#ctor(UsersMicroservicesEductional.Core.ServiceContract.IAuthenticationServices,Microsoft.AspNetCore.Identity.UserManager{UsersMicroservicesEductional.Core.Domain.IdentityEntities.ApplicationUser},Microsoft.AspNetCore.Identity.UI.Services.IEmailSender,Microsoft.AspNetCore.Identity.SignInManager{UsersMicroservicesEductional.Core.Domain.IdentityEntities.ApplicationUser},UsersMicroservicesEductional.Core.Domain.RepositoryContract.IUnitOfWork,Microsoft.AspNetCore.Identity.IPasswordHasher{UsersMicroservicesEductional.Core.Domain.IdentityEntities.ApplicationUser})">
+            <summary>
+            Initializes a new instance of the <see cref="T:UsersMicroservicesEductional.API.Controllers.AccountController"/> class.
+            </summary>
+            <param name="authenticationServices">Authentication service.</param>
+            <param name="userManager">User manager service.</param>
+            <param name="emailSender">Email sender service.</param>
+            <param name="signInManager">Sign-in manager service.</param>
+            <param name="unitOfWork">Unit of work service.</param>
+            <param name="passwordHasher">Password hasher service.</param>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.RegisterCleintAsync(UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.RegisterDTO)">
+            <summary>
+            Registers a new client account.
+            </summary>
+            <param name="registerDTO">Client registration details.</param>
+            <returns>Authentication response with token and status.</returns>
+            <response code="200">Client registered successfully.</response>
+            <response code="400">Invalid input or request.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.LoginAsync(UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.LoginDTO)">
+            <summary>
+            Logs in a user or company.
+            </summary>
+            <param name="loginDTO">Login credentials (email, password).</param>
+            <returns>Authentication response with token and status.</returns>
+            <response code="200">Login successful.</response>
+            <response code="400">Invalid credentials or input.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.ForgotPassword(UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.ForgotPasswordDTO)">
+            <summary>
+            Sends a password reset OTP to the user's email.
+            </summary>
+            <param name="forgotPassword">Email to send the password reset link to.</param>
+            <returns>Status message.</returns>
+            <response code="200">Password reset OTP sent successfully.</response>
+            <response code="400">Invalid input.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.ResetPassword(UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.ResetPasswordDTO)">
+            <summary>
+            Resets the user's password using an OTP.
+            </summary>
+            <param name="resetPassword">Reset password request details, including OTP.</param>
+            <returns>Status message.</returns>
+            <response code="200">Password reset successfully.</response>
+            <response code="400">Invalid OTP or request.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.ChangePassword(UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.ChangePasswordRequest)">
+            <summary>
+            Changes the user's password.
+            </summary>
+            <param name="model">Change password request details.</param>
+            <returns>Status message.</returns>
+            <response code="200">Password changed successfully.</response>
+            <response code="400">Invalid current password.</response>
+            <response code="404">User not found.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.IsEmailInUse(System.String)">
+            <summary>
+            Checks if the email is already in use.
+            </summary>
+            <param name="email">The email to check.</param>
+            <returns>True if the email is in use; otherwise, false.</returns>
+            <response code="200">Check successful, result returned.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.VerifyOtp(UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.OtpVerificationRequest)">
+            <summary>
+            Verifies the OTP code.
+            </summary>
+            <param name="request">OTP verification request.</param>
+            <returns>Status message.</returns>
+            <response code="200">OTP verified successfully.</response>
+            <response code="400">Invalid or expired OTP.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.AddRoleAsync(UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.AddRoleDTO)">
+            <summary>
+            Adds a new role to the user.
+            </summary>
+            <param name="model">Role details to assign.</param>
+            <returns>Status message.</returns>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.RefreshToken">
+            <summary>
+            Refreshes the user's authentication token.
+            </summary>
+            <returns>New authentication token.</returns>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.RevokeToken(UsersMicroservicesEductional.Core.Dtos.AuthenticationDto.RevokTokenDTO)">
+            <summary>
+            Revokes a refresh token.
+            </summary>
+            <param name="revokTokenDTO">Token details to revoke.</param>
+            <returns>Status message.</returns>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Controllers.AccountController.SetRefreshToken(System.String,System.DateTime)">
+            <summary>
+            Sets the refresh token cookie in the response.
+            </summary>
+            <param name="refreshToken">The refresh token string.</param>
+            <param name="expires">The expiration time for the token.</param>
+        </member>
+        <member name="M:UsersMicroservicesEductional.API.Middelware.ExceptionHandlingMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.Exception)">
+            <summary>
+            Handles exceptions and writes a standardized response.
+            </summary>
+        </member>
+    </members>
+</doc>
