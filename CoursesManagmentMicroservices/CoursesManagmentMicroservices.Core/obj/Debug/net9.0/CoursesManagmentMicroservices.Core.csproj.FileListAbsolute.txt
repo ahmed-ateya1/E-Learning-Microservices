@@ -20,3 +20,5 @@ C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\refint\CoursesManagmentMicroservices.Core.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.pdb
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\ref\CoursesManagmentMicroservices.Core.dll
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.csproj.AssemblyReference.cache
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.sourcelink.json

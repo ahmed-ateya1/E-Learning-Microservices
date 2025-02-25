@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CoursesManagmentMicroservices.API</name>
+    </assembly>
+    <members>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CategoryController.GetCategories">
+            <summary>
+            Retrieves all categories from the system
+            </summary>
+            <returns>An ActionResult containing ApiResponse with all categories or error details</returns>
+            <response code="200">Returns the list of all categories</response>
+            <response code="400">If the retrieval operation fails</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CategoryController.GetBaseCategory">
+            <summary>
+            Retrieves all base categories (categories without a parent category)
+            </summary>
+            <returns>An ActionResult containing ApiResponse with base categories or error details</returns>
+            <response code="200">Returns the list of base categories</response>
+            <response code="404">If no base categories are found</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CategoryController.GetSubCategory">
+            <summary>
+            Retrieves all subcategories (categories with a parent category)
+            </summary>
+            <returns>An ActionResult containing ApiResponse with subcategories or error details</returns>
+            <response code="200">Returns the list of subcategories</response>
+            <response code="404">If no subcategories are found</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CategoryController.GetCategoryID(System.Guid)">
+            <summary>
+            Retrieves a specific category by its ID
+            </summary>
+            <param name="id">The GUID of the category to retrieve</param>
+            <returns>An ActionResult containing ApiResponse with the category or error details</returns>
+            <response code="200">Returns the requested category</response>
+            <response code="404">If the category with specified ID is not found</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CategoryController.GetCategoryByName(System.String)">
+            <summary>
+            Retrieves categories matching a specific name (case-insensitive partial match)
+            </summary>
+            <param name="name">The name or partial name to search for</param>
+            <returns>An ActionResult containing ApiResponse with matching categories or error details</returns>
+            <response code="200">Returns the list of matching categories</response>
+            <response code="404">If no categories match the specified name</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CategoryController.AddCategory(CoursesManagmentMicroservices.Core.Dtos.CategoryDto.CategoryAddRequest)">
+            <summary>
+            Creates a new category
+            </summary>
+            <param name="categoryAddRequest">The category details to be added</param>
+            <returns>An ActionResult containing ApiResponse with the created category or error details</returns>
+            <response code="200">Returns the newly created category</response>
+            <response code="400">If the category creation fails</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CategoryController.UpdateCategory(CoursesManagmentMicroservices.Core.Dtos.CategoryDto.CategoryUpdateRequest)">
+            <summary>
+            Updates an existing category
+            </summary>
+            <param name="categoryUpdateRequest">The updated category details</param>
+            <returns>An ActionResult containing ApiResponse with the updated category or error details</returns>
+            <response code="200">Returns the updated category</response>
+            <response code="400">If the category update fails</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CategoryController.DeleteCategory(System.Guid)">
+            <summary>
+            Deletes a category by its ID
+            </summary>
+            <param name="caetgoryID">The GUID of the category to delete</param>
+            <returns>An ActionResult containing ApiResponse with success/failure details</returns>
+            <response code="200">Indicates successful deletion of the category</response>
+            <response code="400">If the category deletion fails</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Middleware.ExceptionHandlingMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.Exception)">
+            <summary>
+            Handles exceptions and writes a standardized response.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -20,7 +20,13 @@ namespace UsersMicroservicesEductional.API
             builder.Services.AddControllers();
             builder.Services.AddFluentValidationAutoValidation();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+            });
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
             {
@@ -44,7 +50,7 @@ namespace UsersMicroservicesEductional.API
                 app.UseSwaggerUI();
             }
 
-            app.UseCors("AllowLocalhost3000");
+            app.UseCors("AllowAll");
             app.UseStaticFiles();
             app.UseRouting();
 

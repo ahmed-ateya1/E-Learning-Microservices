@@ -390,3 +390,4 @@ C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\Us
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.pdb
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.genruntimeconfig.cache
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\ref\UsersMicroservicesEductional.API.dll
+C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.sourcelink.json

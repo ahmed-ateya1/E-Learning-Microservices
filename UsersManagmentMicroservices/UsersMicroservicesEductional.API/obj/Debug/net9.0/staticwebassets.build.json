@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sB6EOd336LxTUK51/a4gB4TNsrxvn5mhy95oTXZml4g=",
+  "Hash": "PrLPRpp9GrigAHCk0rFbqyHemHFFeaiDDx1CWCBvOb0=",
   "Source": "UsersMicroservicesEductional.API",
   "BasePath": "_content/UsersMicroservicesEductional.API",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\39fa5e1a-511b-4778-b2d8-da780d526c67.jpg"
+    },
+    {
+      "Identity": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\801c2fcf-d462-4c9d-933c-ea6f7e8d5c2a.png",
+      "SourceId": "UsersMicroservicesEductional.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\",
+      "BasePath": "_content/UsersMicroservicesEductional.API",
+      "RelativePath": "Upload/801c2fcf-d462-4c9d-933c-ea6f7e8d5c2a#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vrr1vsj5f1",
+      "Integrity": "2yHu8hiHArZFuk38dnZZTCD4HTO8S+S4Ou0BdIB+PD0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\801c2fcf-d462-4c9d-933c-ea6f7e8d5c2a.png"
     },
     {
       "Identity": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\d37e55be-d50d-4bca-9433-f8ffb0331e4b.jpg",
@@ -242,6 +263,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-QPA9ZTfDrogR/wKOJjoraA//626lxGq5NPl4XZ5E7vM="
+        }
+      ]
+    },
+    {
+      "Route": "Upload/801c2fcf-d462-4c9d-933c-ea6f7e8d5c2a.png",
+      "AssetFile": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\801c2fcf-d462-4c9d-933c-ea6f7e8d5c2a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2yHu8hiHArZFuk38dnZZTCD4HTO8S+S4Ou0BdIB+PD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 09:17:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2yHu8hiHArZFuk38dnZZTCD4HTO8S+S4Ou0BdIB+PD0="
+        }
+      ]
+    },
+    {
+      "Route": "Upload/801c2fcf-d462-4c9d-933c-ea6f7e8d5c2a.vrr1vsj5f1.png",
+      "AssetFile": "C:\\.NET Project\\Eductional-Platform-Microservices\\UsersManagmentMicroservices\\UsersMicroservicesEductional.API\\wwwroot\\Upload\\801c2fcf-d462-4c9d-933c-ea6f7e8d5c2a.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2yHu8hiHArZFuk38dnZZTCD4HTO8S+S4Ou0BdIB+PD0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Feb 2025 09:17:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vrr1vsj5f1"
+        },
+        {
+          "Name": "label",
+          "Value": "Upload/801c2fcf-d462-4c9d-933c-ea6f7e8d5c2a.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2yHu8hiHArZFuk38dnZZTCD4HTO8S+S4Ou0BdIB+PD0="
         }
       ]
     },

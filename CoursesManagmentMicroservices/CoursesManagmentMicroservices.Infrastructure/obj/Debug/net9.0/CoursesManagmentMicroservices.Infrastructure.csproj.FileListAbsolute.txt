@@ -28,3 +28,6 @@ C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\refint\CoursesManagmentMicroservices.Infrastructure.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.pdb
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\ref\CoursesManagmentMicroservices.Infrastructure.dll
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\bin\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.runtimeconfig.json
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.sourcelink.json
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.genruntimeconfig.cache
