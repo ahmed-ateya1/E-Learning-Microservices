@@ -33,18 +33,12 @@ namespace UsersMicroservicesEductional.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Eductional-Platform APP", Version = "v1" });
                 c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "api.xml"));
             });
-            builder.Services.AddOpenApi();
 
             var app = builder.Build();
             app.UseExceptionHandlingMiddleware();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-            else
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
