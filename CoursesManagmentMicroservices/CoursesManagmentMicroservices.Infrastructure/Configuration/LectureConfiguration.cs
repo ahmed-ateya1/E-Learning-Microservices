@@ -48,7 +48,7 @@ namespace CoursesManagmentMicroservices.Infrastructure.Configuration
 
             builder.HasOne(d => d.Section)
                 .WithMany(x => x.Lectures)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.Cascade);
 
             builder.ToTable("Lectures");
         }

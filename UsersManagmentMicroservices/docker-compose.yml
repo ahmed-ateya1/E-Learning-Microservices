@@ -12,9 +12,10 @@ services:
       - USER_SQLSERVER=sa
       - PASSWORD_SQLSERVER=AhmedAteya12348@#
     depends_on:
-        - db
+      - db
     networks:
       - eductional
+
   coursemicroservices:
     image: ahmedateya/courses-managment:latest
     ports:
@@ -27,15 +28,23 @@ services:
       - eductional
     depends_on:
       - db
+
   db:
-   image: mcr.microsoft.com/mssql/server:2022-latest
-   ports:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
       - "1433:1433"
-   environment:
+    environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=AhmedAteya12348@#
-   networks:
+    networks:
       - eductional
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
 networks:
   eductional:
     driver: bridge
+
+volumes:
+  sqlserver_data:
+    driver: local

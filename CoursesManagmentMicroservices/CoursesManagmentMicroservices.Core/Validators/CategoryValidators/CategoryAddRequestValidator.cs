@@ -11,8 +11,6 @@ namespace CoursesManagmentMicroservices.Core.Validators.CategoryValidators
                 .NotEmpty().WithMessage("Category name is required")
                 .MaximumLength(100).WithMessage("Category name can not be longer than 100 characters");
 
-            RuleFor(x => x.BaseCategoryID)
-                .NotEmpty().WithMessage("Base category ID is required");
         }
     }
 

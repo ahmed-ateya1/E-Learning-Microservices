@@ -3,6 +3,7 @@ using Microsoft.OpenApi.Models;
 using UsersMicroservicesEductional.API.Middelware;
 using UsersMicroservicesEductional.Core.DependencyInjectionConfig;
 using UsersMicroservicesEductional.Infrastructure.DependencyInjectionConfig;
+
 namespace UsersMicroservicesEductional.API
 {
     public class Program
@@ -19,7 +20,7 @@ namespace UsersMicroservicesEductional.API
             builder.Services.AddLogging();
             builder.Services.AddControllers();
             builder.Services.AddFluentValidationAutoValidation();
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll",
@@ -27,6 +28,7 @@ namespace UsersMicroservicesEductional.API
                         .AllowAnyMethod()
                         .AllowAnyHeader());
             });
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(c =>
             {

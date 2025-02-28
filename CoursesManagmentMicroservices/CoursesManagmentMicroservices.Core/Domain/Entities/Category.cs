@@ -2,7 +2,7 @@
 {
     public class Category
     {
-        public Guid CategoryID { get; set; }
+        public Guid CategoryID { get; set; }  = Guid.NewGuid();
         public string CategoryName { get; set; }
         public Guid? BaseCategoryID { get; set; }
         public virtual Category BaseCategory { get; set; }

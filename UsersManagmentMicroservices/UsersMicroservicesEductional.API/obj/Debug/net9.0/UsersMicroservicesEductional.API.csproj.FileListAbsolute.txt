@@ -373,6 +373,7 @@ C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\Us
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.csproj.CoreCompileInputs.cache
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.MvcApplicationPartsAssemblyInfo.cs
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.MvcApplicationPartsAssemblyInfo.cache
+C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.sourcelink.json
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\scopedcss\bundle\UsersMicroservicesEductional.API.styles.css
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\staticwebassets.build.json
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\staticwebassets.development.json
@@ -390,4 +391,3 @@ C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\Us
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.pdb
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.genruntimeconfig.cache
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\ref\UsersMicroservicesEductional.API.dll
-C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.API\obj\Debug\net9.0\UsersMicroservicesEductional.API.sourcelink.json

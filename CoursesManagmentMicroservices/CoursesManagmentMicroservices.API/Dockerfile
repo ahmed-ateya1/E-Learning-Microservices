@@ -12,6 +12,8 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["CoursesManagmentMicroservices.API/CoursesManagmentMicroservices.API.csproj", "CoursesManagmentMicroservices.API/"]
+COPY ["CoursesManagmentMicroservices.Core/CoursesManagmentMicroservices.Core.csproj", "CoursesManagmentMicroservices.Core/"]
+COPY ["CoursesManagmentMicroservices.Infrastructure/CoursesManagmentMicroservices.Infrastructure.csproj", "CoursesManagmentMicroservices.Infrastructure/"]
 RUN dotnet restore "./CoursesManagmentMicroservices.API/CoursesManagmentMicroservices.API.csproj"
 COPY . .
 WORKDIR "/src/CoursesManagmentMicroservices.API"

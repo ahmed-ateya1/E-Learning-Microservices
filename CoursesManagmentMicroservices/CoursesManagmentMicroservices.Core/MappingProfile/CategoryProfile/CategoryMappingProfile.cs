@@ -14,7 +14,7 @@ namespace CoursesManagmentMicroservices.Core.MappingProfile.CategoryProfile
                 .ReverseMap();
 
             CreateMap<CategoryUpdateRequest,Category>()
-                .ForMember(dest => dest.CategoryID, opt => opt.MapFrom(src => src.CategoryID))
+                .ForMember(dest => dest.CategoryID, opt => opt.Ignore())
                 .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(src => src.CategoryName))
                 .ReverseMap();
 

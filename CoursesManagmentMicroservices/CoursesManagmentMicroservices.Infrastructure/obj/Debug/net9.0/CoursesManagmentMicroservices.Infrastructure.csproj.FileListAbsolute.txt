@@ -14,6 +14,7 @@ C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices.
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices.API\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.pdb
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices.API\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\ref\CoursesManagmentMicroservices.Infrastructure.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\bin\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.deps.json
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\bin\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.runtimeconfig.json
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\bin\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\bin\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.pdb
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\bin\Debug\net9.0\CoursesManagmentMicroservices.Core.dll
@@ -23,11 +24,10 @@ C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.AssemblyInfoInputs.cache
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.AssemblyInfo.cs
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.csproj.CoreCompileInputs.cache
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.sourcelink.json
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesM.23AB710C.Up2Date
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\refint\CoursesManagmentMicroservices.Infrastructure.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.pdb
-C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\ref\CoursesManagmentMicroservices.Infrastructure.dll
-C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\bin\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.runtimeconfig.json
-C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.sourcelink.json
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\CoursesManagmentMicroservices.Infrastructure.genruntimeconfig.cache
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Infrastructure\obj\Debug\net9.0\ref\CoursesManagmentMicroservices.Infrastructure.dll

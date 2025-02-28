@@ -73,6 +73,225 @@
             <response code="200">Indicates successful deletion of the category</response>
             <response code="400">If the category deletion fails</response>
         </member>
+        <member name="T:CoursesManagmentMicroservices.API.Controllers.CourseController">
+            <summary>
+            Controller responsible for managing course-related operations such as adding, updating, deleting, and retrieving courses.
+            </summary>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CourseController.#ctor(Microsoft.Extensions.Logging.ILogger{CoursesManagmentMicroservices.API.Controllers.CourseController},MediatR.IMediator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CoursesManagmentMicroservices.API.Controllers.CourseController"/> class.
+            </summary>
+            <param name="logger">The logger instance used for logging controller activities.</param>
+            <param name="mediator">The MediatR mediator instance used to dispatch commands and queries.</param>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CourseController.AddCourse(CoursesManagmentMicroservices.Core.Dtos.CourseDto.CourseAddRequest)">
+            <summary>
+            Adds a new course to the system.
+            </summary>
+            <param name="courseAddRequest">The request object containing details of the course to be added.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> indicating the result of the operation.</returns>
+            <response code="200">Returns when the course is successfully added.</response>
+            <response code="400">Returns when an error occurs during the addition process.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CourseController.UpdateCourse(CoursesManagmentMicroservices.Core.Dtos.CourseDto.CourseUpdateRequest)">
+            <summary>
+            Updates an existing course in the system.
+            </summary>
+            <param name="courseUpdateRequest">The request object containing updated course details.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> indicating the result of the operation.</returns>
+            <response code="200">Returns when the course is successfully updated.</response>
+            <response code="400">Returns when an error occurs during the update process.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CourseController.DeleteCourse(System.Guid)">
+            <summary>
+            Deletes a course from the system based on its unique identifier.
+            </summary>
+            <param name="courseID">The unique identifier of the course to delete.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> indicating the result of the operation.</returns>
+            <response code="200">Returns when the course is successfully deleted.</response>
+            <response code="400">Returns when an error occurs during the deletion process.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CourseController.GetAllCourses(CoursesManagmentMicroservices.Core.Dtos.PaginationDto)">
+            <summary>
+            Retrieves a paginated list of all courses.
+            </summary>
+            <param name="pagination">The pagination parameters to control the result set.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of courses.</returns>
+            <response code="200">Returns when the courses are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CourseController.GetCourse(System.Guid)">
+            <summary>
+            Retrieves a specific course by its unique identifier.
+            </summary>
+            <param name="courseID">The unique identifier of the course to retrieve.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the course details.</returns>
+            <response code="200">Returns when the course is successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CourseController.GetCourseByCategory(System.Guid,CoursesManagmentMicroservices.Core.Dtos.PaginationDto)">
+            <summary>
+            Retrieves a paginated list of courses by category.
+            </summary>
+            <param name="categoryID">The unique identifier of the category to filter courses by.</param>
+            <param name="pagination">The pagination parameters to control the result set.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of courses.</returns>
+            <response code="200">Returns when the courses are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CourseController.GetCourseByUser(System.Guid,CoursesManagmentMicroservices.Core.Dtos.PaginationDto)">
+            <summary>
+            Retrieves a paginated list of courses associated with a specific user.
+            </summary>
+            <param name="userID">The unique identifier of the user whose courses are to be retrieved.</param>
+            <param name="pagination">The pagination parameters to control the result set.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of courses.</returns>
+            <response code="200">Returns when the courses are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.CourseController.GetCourseByTitle(System.String,CoursesManagmentMicroservices.Core.Dtos.PaginationDto)">
+            <summary>
+            Retrieves a paginated list of courses by title.
+            </summary>
+            <param name="title">The title or partial title to filter courses by.</param>
+            <param name="pagination">The pagination parameters to control the result set.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of courses.</returns>
+            <response code="200">Returns when the courses are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="T:CoursesManagmentMicroservices.API.Controllers.SectionController">
+            <summary>
+            Controller responsible for managing section-related operations such as adding, updating, deleting, and retrieving sections.
+            </summary>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.#ctor(Microsoft.Extensions.Logging.ILogger{CoursesManagmentMicroservices.API.Controllers.SectionController},CoursesManagmentMicroservices.Core.ServiceContract.ISectionServices)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CoursesManagmentMicroservices.API.Controllers.SectionController"/> class.
+            </summary>
+            <param name="logger">The logger instance used for logging controller activities.</param>
+            <param name="sectionServices">The service instance used to handle section-related business logic.</param>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.AddSection(CoursesManagmentMicroservices.Core.Dtos.SectionDto.SectionAddRequest)">
+            <summary>
+            Adds a new section to the system.
+            </summary>
+            <param name="sectionAddRequest">The request object containing details of the section to be added.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> indicating the result of the operation.</returns>
+            <response code="200">Returns when the section is successfully added.</response>
+            <response code="400">Returns when an error occurs during the addition process.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.UpdateSection(CoursesManagmentMicroservices.Core.Dtos.SectionDto.SectionUpdateRequest)">
+            <summary>
+            Updates an existing section in the system.
+            </summary>
+            <param name="sectionUpdateRequest">The request object containing updated section details.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> indicating the result of the operation.</returns>
+            <response code="200">Returns when the section is successfully updated.</response>
+            <response code="400">Returns when an error occurs during the update process.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.DeleteSection(System.Guid)">
+            <summary>
+            Deletes a section from the system based on its unique identifier.
+            </summary>
+            <param name="id">The unique identifier of the section to delete.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> indicating the result of the operation.</returns>
+            <response code="200">Returns when the section is successfully deleted.</response>
+            <response code="400">Returns when an error occurs during the deletion process.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.GetSection(System.Guid)">
+            <summary>
+            Retrieves a specific section by its unique identifier.
+            </summary>
+            <param name="id">The unique identifier of the section to retrieve.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the section details.</returns>
+            <response code="200">Returns when the section is successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval or the section is not found.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.GetAllSections">
+            <summary>
+            Retrieves all sections in the system.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of sections.</returns>
+            <response code="200">Returns when the sections are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.GetSectionsByCourse(System.Guid)">
+            <summary>
+            Retrieves all sections associated with a specific course.
+            </summary>
+            <param name="courseId">The unique identifier of the course to filter sections by.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of sections.</returns>
+            <response code="200">Returns when the sections are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.GetSectionsByCourseAndVisible(System.Guid)">
+            <summary>
+            Retrieves all visible sections associated with a specific course.
+            </summary>
+            <param name="courseId">The unique identifier of the course to filter sections by.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of visible sections.</returns>
+            <response code="200">Returns when the visible sections are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.GetSectionsByCourseAndInvisible(System.Guid)">
+            <summary>
+            Retrieves all invisible sections associated with a specific course.
+            </summary>
+            <param name="courseId">The unique identifier of the course to filter sections by.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of invisible sections.</returns>
+            <response code="200">Returns when the invisible sections are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.GetSectionsByVisible">
+            <summary>
+            Retrieves all visible sections in the system.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of visible sections.</returns>
+            <response code="200">Returns when the visible sections are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.SectionController.GetSectionsByInvisible">
+            <summary>
+            Retrieves all invisible sections in the system.
+            </summary>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the list of invisible sections.</returns>
+            <response code="200">Returns when the invisible sections are successfully retrieved.</response>
+            <response code="400">Returns when an error occurs during retrieval.</response>
+        </member>
+        <member name="T:CoursesManagmentMicroservices.API.FileServiceContract.FileService">
+            <summary>
+            Provides file-related services for the application.
+            </summary>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.FileServiceContract.FileService.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Http.IHttpContextAccessor,Microsoft.Extensions.Logging.ILogger{CoursesManagmentMicroservices.API.FileServiceContract.FileService})">
+            <summary>
+            Initializes a new instance of the <see cref="T:CoursesManagmentMicroservices.API.FileServiceContract.FileService"/> class.
+            </summary>
+            <param name="environment">The web host environment.</param>
+            <param name="httpContextAccessor">The HTTP context accessor.</param>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.FileServiceContract.FileService.CreateFileAsync(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Creates a new file in the "Upload" directory.
+            </summary>
+            <param name="file">The file to be created.</param>
+            <returns>The URL of the created file.</returns>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.FileServiceContract.FileService.DeleteFileAsync(System.String)">
+            <summary>
+            Deletes a file from the "Upload" directory.
+            </summary>
+            <param name="fileName">The URL of the file to be deleted.</param>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.FileServiceContract.FileService.UpdateFileAsync(Microsoft.AspNetCore.Http.IFormFile,System.String)">
+            <summary>
+            Updates a file in the "Upload" directory.
+            </summary>
+            <param name="newFile">The new file to be updated.</param>
+            <param name="currentFileName">The URL of the current file to be replaced.</param>
+            <returns>The URL of the updated file.</returns>
+        </member>
         <member name="M:CoursesManagmentMicroservices.API.Middleware.ExceptionHandlingMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.Exception)">
             <summary>
             Handles exceptions and writes a standardized response.

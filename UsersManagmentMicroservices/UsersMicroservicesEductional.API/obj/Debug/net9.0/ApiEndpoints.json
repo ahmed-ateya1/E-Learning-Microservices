@@ -65,6 +65,32 @@
   },
   {
     "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
+    "Method": "GetUserInfo",
+    "RelativePath": "api/Account/getUserInfo/{userID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UsersMicroservicesEductional.Core.Dtos.ApiResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UsersMicroservicesEductional.API.Controllers.AccountController",
     "Method": "LoginAsync",
     "RelativePath": "api/Account/login",
     "HttpMethod": "POST",

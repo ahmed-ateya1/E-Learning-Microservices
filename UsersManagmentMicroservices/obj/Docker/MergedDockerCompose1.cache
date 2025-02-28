@@ -1,5 +1,22 @@
 name: dockercompose18390421537082020773
 services:
+  coursemicroservices:
+    depends_on:
+      db:
+        condition: service_started
+        required: true
+    environment:
+      MSSQL_DB: Eductional-Courses-DB
+      MSSQL_PASSWORD: AhmedAteya12348@#
+      MSSQL_SERVER: db
+    image: ahmedateya/courses-managment:latest
+    networks:
+      eductional: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "7000"
+        protocol: tcp
   db:
     environment:
       ACCEPT_EULA: "Y"
@@ -12,6 +29,11 @@ services:
         target: 1433
         published: "1433"
         protocol: tcp
+    volumes:
+      - type: volume
+        source: sqlserver_data
+        target: /var/opt/mssql
+        volume: {}
   usersmicroserviceseductional.api:
     build:
       context: C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices
@@ -133,3 +155,7 @@ networks:
   eductional:
     name: dockercompose18390421537082020773_eductional
     driver: bridge
+volumes:
+  sqlserver_data:
+    name: dockercompose18390421537082020773_sqlserver_data
+    driver: local

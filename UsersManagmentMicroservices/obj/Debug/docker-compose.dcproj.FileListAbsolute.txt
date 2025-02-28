@@ -58,10 +58,10 @@ C:\.NET Project\Eductional-Platform-Microservices\bin\Debug\UsersMicroservicesEd
 C:\.NET Project\Eductional-Platform-Microservices\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\.NET Project\Eductional-Platform-Microservices\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\.NET Project\Eductional-Platform-Microservices\obj\Debug\docker-c.35A3FFBA.Up2Date
-C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\bin\Debug\appsettings.Development.json
-C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\bin\Debug\appsettings.json
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\bin\Debug\UsersMicroservicesEductional.API.deps.json
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\bin\Debug\UsersMicroservicesEductional.API.runtimeconfig.json
+C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\bin\Debug\appsettings.Development.json
+C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\bin\Debug\appsettings.json
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\bin\Debug\UsersMicroservicesEductional.API.staticwebassets.runtime.json
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\bin\Debug\UsersMicroservicesEductional.API.staticwebassets.endpoints.json
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\bin\Debug\UsersMicroservicesEductional.API.exe

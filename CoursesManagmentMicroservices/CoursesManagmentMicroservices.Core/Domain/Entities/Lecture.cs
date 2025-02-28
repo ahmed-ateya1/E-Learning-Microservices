@@ -11,7 +11,7 @@
         public bool IsPreview { get; set; } = true;
         public int DurationInMinutes { get; set; }
         public int Order { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime CreatedAt { get; set; } 
         public DateTime UpdatedAt { get; set; }
         public Guid SectionID { get; set; }
         public virtual Section Section { get; set; }

@@ -26,6 +26,7 @@ C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\Us
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Infrastructure\obj\Debug\net9.0\UsersMicroservicesEductional.Infrastructure.AssemblyInfoInputs.cache
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Infrastructure\obj\Debug\net9.0\UsersMicroservicesEductional.Infrastructure.AssemblyInfo.cs
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Infrastructure\obj\Debug\net9.0\UsersMicroservicesEductional.Infrastructure.csproj.CoreCompileInputs.cache
+C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Infrastructure\obj\Debug\net9.0\UsersMicroservicesEductional.Infrastructure.sourcelink.json
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Infrastructure\obj\Debug\net9.0\UsersMic.44BE1490.Up2Date
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Infrastructure\obj\Debug\net9.0\UsersMicroservicesEductional.Infrastructure.dll
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Infrastructure\obj\Debug\net9.0\refint\UsersMicroservicesEductional.Infrastructure.dll

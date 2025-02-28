@@ -1,32 +1,35 @@
-# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
-# This stage is used when running from VS in fast mode (Default for Debug configuration)
+# Base image with ASP.NET Core runtime
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
-USER $APP_UID
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 8080 
 
-
-# This stage is used to build the service project
+# Build stage
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
+
+# Copy and restore dependencies
 COPY ["UsersMicroservicesEductional.API/UsersMicroservicesEductional.API.csproj", "UsersMicroservicesEductional.API/"]
 COPY ["UsersMicroservicesEductional.Core/UsersMicroservicesEductional.Core.csproj", "UsersMicroservicesEductional.Core/"]
 COPY ["UsersMicroservicesEductional.Infrastructure/UsersMicroservicesEductional.Infrastructure.csproj", "UsersMicroservicesEductional.Infrastructure/"]
 RUN dotnet restore "./UsersMicroservicesEductional.API/UsersMicroservicesEductional.API.csproj"
+
+# Copy everything and build
 COPY . .
 WORKDIR "/src/UsersMicroservicesEductional.API"
 RUN dotnet build "./UsersMicroservicesEductional.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# This stage is used to publish the service project to be copied to the final stage
+# Publish stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./UsersMicroservicesEductional.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
+# Final runtime stage
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+# Ensure app listens on 8080
+ENV ASPNETCORE_URLS=http://+:8080
+
 ENTRYPOINT ["dotnet", "UsersMicroservicesEductional.API.dll"]

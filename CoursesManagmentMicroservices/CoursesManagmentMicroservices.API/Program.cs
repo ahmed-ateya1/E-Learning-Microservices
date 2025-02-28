@@ -1,5 +1,8 @@
+using CoursesManagmentMicroservices.API.FileServiceContract;
 using CoursesManagmentMicroservices.API.Middleware;
+using CoursesManagmentMicroservices.API.ServiceConfiguration;
 using CoursesManagmentMicroservices.Core;
+using CoursesManagmentMicroservices.Core.ServiceContract;
 using FluentValidation.AspNetCore;
 using Microsoft.OpenApi.Models;
 
@@ -11,30 +14,7 @@ namespace CoursesManagmentMicroservices.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddInfrastructure(builder.Configuration);
-            builder.Services.AddCore();
-            builder.Services.AddControllers();
-            builder.Services.AddHealthChecks();
-            builder.Services.AddLogging();
-            builder.Services.AddControllers();
-            builder.Services.AddFluentValidationAutoValidation();
-
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Courses Managment Microserices", Version = "v1" });
-                c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "api.xml"));
-            });
-            builder.Services.AddCors(options =>
-            {
-                options.AddDefaultPolicy(builder =>
-                {
-                    builder.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader();
-                });
-            });
-            builder.Services.AddOpenApi();
+            builder.Services.AddMainServices(builder.Configuration);
             var app = builder.Build();
 
             app.UseExceptionHandlingMiddleware();

@@ -36,6 +36,7 @@ namespace CoursesManagmentMicroservices.Infrastructure.Configuration
                 .HasMaxLength(50);
 
             builder.Property(e => e.Duration)
+                .HasColumnType("decimal(18,2)")
                 .IsRequired();
 
             builder.Property(e => e.Requirements)
@@ -78,6 +79,10 @@ namespace CoursesManagmentMicroservices.Infrastructure.Configuration
                 .HasForeignKey(e => e.CategoryID)
                 .OnDelete(DeleteBehavior.NoAction);
 
+            builder.HasMany(e => e.Sections)
+                .WithOne(x => x.Course)
+                .HasForeignKey(e => e.CourseID)
+                .OnDelete(DeleteBehavior.Cascade);
             builder.ToTable("Courses");
         }
     }

@@ -12,13 +12,13 @@ C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices.
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\bin\Debug\net9.0\CoursesManagmentMicroservices.Core.deps.json
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\bin\Debug\net9.0\CoursesManagmentMicroservices.Core.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\bin\Debug\net9.0\CoursesManagmentMicroservices.Core.pdb
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.csproj.AssemblyReference.cache
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.AssemblyInfoInputs.cache
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.AssemblyInfo.cs
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.csproj.CoreCompileInputs.cache
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.sourcelink.json
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\refint\CoursesManagmentMicroservices.Core.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.pdb
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\ref\CoursesManagmentMicroservices.Core.dll
-C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.csproj.AssemblyReference.cache
-C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.Core\obj\Debug\net9.0\CoursesManagmentMicroservices.Core.sourcelink.json

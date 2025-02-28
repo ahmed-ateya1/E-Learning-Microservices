@@ -9,6 +9,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using UsersMicroservicesEductional.Core.Domain.IdentityEntities;
+using UsersMicroservicesEductional.Core.Dtos;
 using UsersMicroservicesEductional.Core.Dtos.AuthenticationDto;
 using UsersMicroservicesEductional.Core.Helper;
 using UsersMicroservicesEductional.Core.ServiceContract;
@@ -177,6 +178,7 @@ namespace UsersMicroservicesEductional.Core.Services
                 user.RefreshTokens.Add(newRefreshToken);
                 await _userManager.UpdateAsync(user);
             }
+            authenticationUser.UserID = user.Id;
 
             return authenticationUser;
         }
@@ -271,6 +273,8 @@ namespace UsersMicroservicesEductional.Core.Services
                 user.RefreshTokens.Add(newRefreshToken);
                 await _userManager.UpdateAsync(user);
             }
+            authenticationUser.UserID = user.Id;
+
             return authenticationUser;
         }
 
@@ -368,6 +372,21 @@ namespace UsersMicroservicesEductional.Core.Services
             string emailBody = EmailBody("Reset Your Password", "We received a request to reset your password. Please use the following OTP code to proceed:", user.Email, otpCode);
             await _emailSender.SendEmailAsync(user.Email, "Reset Password OTP", emailBody);
             return true;
+        }
+        public Task<UserDto?> GetUserByIdAsync(Guid userID)
+        {
+            var user = _userManager.Users.FirstOrDefault(x => x.Id == userID);
+            if (user == null)
+                return Task.FromResult<UserDto?>(null);
+
+            var userdto = new UserDto
+            {
+                UserID = user.Id,
+                Email = user.Email,
+                FullName = user.FullName,
+                ProfilePictureUrl = user.ProfilePictureUrl
+            };
+            return Task.FromResult<UserDto?>(userdto);
         }
     }
 }

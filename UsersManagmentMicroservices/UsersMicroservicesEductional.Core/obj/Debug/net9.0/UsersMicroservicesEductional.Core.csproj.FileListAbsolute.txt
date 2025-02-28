@@ -18,6 +18,7 @@ C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\Us
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Core\obj\Debug\net9.0\UsersMicroservicesEductional.Core.AssemblyInfoInputs.cache
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Core\obj\Debug\net9.0\UsersMicroservicesEductional.Core.AssemblyInfo.cs
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Core\obj\Debug\net9.0\UsersMicroservicesEductional.Core.csproj.CoreCompileInputs.cache
+C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Core\obj\Debug\net9.0\UsersMicroservicesEductional.Core.sourcelink.json
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Core\obj\Debug\net9.0\UsersMicroservicesEductional.Core.dll
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Core\obj\Debug\net9.0\refint\UsersMicroservicesEductional.Core.dll
 C:\.NET Project\Eductional-Platform-Microservices\UsersManagmentMicroservices\UsersMicroservicesEductional.Core\obj\Debug\net9.0\UsersMicroservicesEductional.Core.pdb
