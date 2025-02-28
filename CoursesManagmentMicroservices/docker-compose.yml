@@ -32,7 +32,12 @@ services:
       - eductional
     depends_on:
       - e-learning-db
-
+  cartmicroservices:
+    image: ahmedateya/shopping-cart
+    ports:
+      - "6000:8080"
+    networks:
+      - eductional
   e-learning-db:
     image: mcr.microsoft.com/mssql/server:2022-latest
     ports:

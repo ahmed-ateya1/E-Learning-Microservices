@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CartManagementMicroservice.API</name>
+    </assembly>
+    <members>
+        <member name="T:CartManagementMicroservice.API.Controllers.ShoppingCartController">
+            <summary>
+            Controller responsible for managing shopping cart operations such as retrieving, adding, removing, and clearing cart items.
+            </summary>
+        </member>
+        <member name="M:CartManagementMicroservice.API.Controllers.ShoppingCartController.#ctor(CartManagementMicroservice.BusinessLayer.ServiceContract.IShoppingCartService,Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:CartManagementMicroservice.API.Controllers.ShoppingCartController"/> class.
+            </summary>
+            <param name="shoppingCartService">Service for shopping cart operations.</param>
+            <param name="httpContextAccessor">Accessor for HTTP context to retrieve user information.</param>
+        </member>
+        <member name="M:CartManagementMicroservice.API.Controllers.ShoppingCartController.GetCart(System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves the shopping cart for a specified user.
+            </summary>
+            <param name="userID">The unique identifier of the user whose cart is to be retrieved.</param>
+            <param name="cancellationToken">A token to monitor for cancellation requests.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> containing the user's shopping cart data.</returns>
+            <response code="200">Returns the shopping cart for the specified user.</response>
+            <response code="401">Returned if the request is not authorized.</response>
+        </member>
+        <member name="M:CartManagementMicroservice.API.Controllers.ShoppingCartController.AddToCart(CartManagementMicroservice.DataAccessLayer.Entities.CartItems,System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Adds an item to the user's shopping cart.
+            </summary>
+            <param name="item">The cart item to be added, provided in the request body.</param>
+            <param name="userID">The unique identifier of the user whose cart will be updated.</param>
+            <param name="cancellationToken">A token to monitor for cancellation requests.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> indicating the result of the operation.</returns>
+            <response code="200">Returns a success message indicating the item was added to the cart.</response>
+            <response code="401">Returned if the request is not authorized.</response>
+            <response code="400">Returned if the provided item data is invalid.</response>
+        </member>
+        <member name="M:CartManagementMicroservice.API.Controllers.ShoppingCartController.RemoveFromCart(System.String,System.Guid,System.Threading.CancellationToken)">
+            <summary>
+            Removes a specific item from the user's shopping cart.
+            </summary>
+            <param name="userId">The unique identifier of the user whose cart will be modified.</param>
+            <param name="courseID">The unique identifier of the course to be removed from the cart.</param>
+            <param name="cancellationToken">A token to monitor for cancellation requests.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> indicating the result of the operation.</returns>
+            <response code="200">Returns a success message indicating the item was removed from the cart.</response>
+            <response code="401">Returned if the request is not authorized.</response>
+            <response code="404">Returned if the specified item is not found in the cart.</response>
+        </member>
+        <member name="M:CartManagementMicroservice.API.Controllers.ShoppingCartController.ClearCart(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Clears all items from the user's shopping cart.
+            </summary>
+            <param name="userId">The unique identifier of the user whose cart will be cleared.</param>
+            <param name="cancellationToken">A token to monitor for cancellation requests.</param>
+            <returns>An <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> indicating the result of the operation.</returns>
+            <response code="200">Returns a success message indicating the cart was cleared.</response>
+            <response code="401">Returned if the request is not authorized.</response>
+        </member>
+    </members>
+</doc>
