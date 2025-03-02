@@ -51,6 +51,8 @@ C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\Humanizer.dll
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\MediatR.dll
+C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\MediatR.Contracts.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\Microsoft.Build.Locator.dll
@@ -214,5 +216,3 @@ C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\obj\Debug\net9.0\CoursesManagmentMicroservices.API.pdb
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\obj\Debug\net9.0\CoursesManagmentMicroservices.API.genruntimeconfig.cache
 C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\obj\Debug\net9.0\ref\CoursesManagmentMicroservices.API.dll
-C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\MediatR.dll
-C:\.NET Project\Eductional-Platform-Microservices\CoursesManagmentMicroservices\CoursesManagmentMicroservices.API\bin\Debug\net9.0\MediatR.Contracts.dll

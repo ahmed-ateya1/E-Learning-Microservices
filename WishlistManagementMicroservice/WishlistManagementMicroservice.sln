@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WishlistManagementMicroservice.API", "WishlistManagementMicroservice.API\WishlistManagementMicroservice.API.csproj", "{FEEC8480-3DFA-45D7-AB02-6929FB7D0C31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WishlistManagementMicroservice.BusinessLayer", "WishlistManagementMicroservice.BusinessLayer\WishlistManagementMicroservice.BusinessLayer.csproj", "{B72258CB-85F0-496E-B6FD-4DFCD8DBCFA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WishlistManagementMicroservice.DataAccessLayer", "WishlistManagementMicroservice.DataAccessLayer\WishlistManagementMicroservice.DataAccessLayer.csproj", "{493EC206-F0AD-49B3-9998-6ADDF60DA201}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEEC8480-3DFA-45D7-AB02-6929FB7D0C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEEC8480-3DFA-45D7-AB02-6929FB7D0C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEEC8480-3DFA-45D7-AB02-6929FB7D0C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEEC8480-3DFA-45D7-AB02-6929FB7D0C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B72258CB-85F0-496E-B6FD-4DFCD8DBCFA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B72258CB-85F0-496E-B6FD-4DFCD8DBCFA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B72258CB-85F0-496E-B6FD-4DFCD8DBCFA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B72258CB-85F0-496E-B6FD-4DFCD8DBCFA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{493EC206-F0AD-49B3-9998-6ADDF60DA201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493EC206-F0AD-49B3-9998-6ADDF60DA201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493EC206-F0AD-49B3-9998-6ADDF60DA201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493EC206-F0AD-49B3-9998-6ADDF60DA201}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

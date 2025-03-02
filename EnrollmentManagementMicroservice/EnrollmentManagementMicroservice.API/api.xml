@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EnrollmentManagementMicroservice.API</name>
+    </assembly>
+    <members>
+        <member name="T:EnrollmentManagementMicroservice.API.Controllers.EnrollmentController">
+            <summary>
+            Controller for managing enrollment operations in the system
+            </summary>
+        </member>
+        <member name="M:EnrollmentManagementMicroservice.API.Controllers.EnrollmentController.#ctor(EnrollmentManagementMicroservice.BusinessLayer.Services.IEnrollmentService,Microsoft.Extensions.Logging.ILogger{EnrollmentManagementMicroservice.API.Controllers.EnrollmentController})">
+            <summary>
+            Initializes a new instance of the EnrollmentController
+            </summary>
+            <param name="enrollmentService">The enrollment service instance</param>
+            <param name="logger">The logger instance for logging controller operations</param>
+        </member>
+        <member name="M:EnrollmentManagementMicroservice.API.Controllers.EnrollmentController.EnrollStudent(EnrollmentManagementMicroservice.BusinessLayer.Dtos.EnrollmentAddRequest)">
+            <summary>
+            Enrolls a student in a course
+            </summary>
+            <param name="request">The enrollment request details</param>
+            <returns>API response containing enrollment result</returns>
+        </member>
+        <member name="M:EnrollmentManagementMicroservice.API.Controllers.EnrollmentController.UpdateEnrollment(EnrollmentManagementMicroservice.BusinessLayer.Dtos.EnrollmentUpdateRequest)">
+            <summary>
+            Updates an existing enrollment
+            </summary>
+            <param name="request">The enrollment update request details</param>
+            <returns>API response containing updated enrollment result</returns>
+        </member>
+        <member name="M:EnrollmentManagementMicroservice.API.Controllers.EnrollmentController.DeleteEnrollment(System.Guid)">
+            <summary>
+            Deletes an existing enrollment
+            </summary>
+            <param name="enrollmentId">The ID of the enrollment to delete</param>
+            <returns>API response indicating deletion success</returns>
+        </member>
+        <member name="M:EnrollmentManagementMicroservice.API.Controllers.EnrollmentController.GetEnrollment(System.Guid)">
+            <summary>
+            Gets an enrollment by its ID
+            </summary>
+            <param name="enrollmentId">The ID of the enrollment to retrieve</param>
+            <returns>API response containing the enrollment details</returns>
+        </member>
+        <member name="M:EnrollmentManagementMicroservice.API.Controllers.EnrollmentController.GetAllEnrollments">
+            <summary>
+            Gets all enrollments in the system
+            </summary>
+            <returns>API response containing all enrollments</returns>
+        </member>
+        <member name="M:EnrollmentManagementMicroservice.API.Controllers.EnrollmentController.GetAllEnrollmentsByCourse(System.Guid)">
+            <summary>
+            Gets all enrollments for a specific course
+            </summary>
+            <param name="courseId">The ID of the course</param>
+            <returns>API response containing enrollments for the course</returns>
+        </member>
+        <member name="M:EnrollmentManagementMicroservice.API.Controllers.EnrollmentController.GetAllEnrollmentsByUser(System.Guid)">
+            <summary>
+            Gets all enrollments for a specific user
+            </summary>
+            <param name="userId">The ID of the user</param>
+            <returns>API response containing enrollments for the user</returns>
+        </member>
+    </members>
+</doc>

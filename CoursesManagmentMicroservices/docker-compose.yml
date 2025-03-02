@@ -32,12 +32,24 @@ services:
       - eductional
     depends_on:
       - e-learning-db
-  cartmicroservices:
-    image: ahmedateya/shopping-cart
+  enrollmentmicroservices:
+    image: enrollment-microservice:latest
     ports:
-      - "6000:8080"
+      - "9000:8080"
+    environment:
+      - UserMicroserviceName=usermicroservices
+      - userMicroservicePort=8080
+      - CourseMicroserviceName=coursesmanagmentmicroservices.api
+      - CourseMicroservicePort=8080
+      - MSSQL_SERVER=e-learning-db
+      - MSSQL_DB=Eductional-Enrollments-DB
+      - MSSQL_PASSWORD=AhmedAteya12348@#
     networks:
       - eductional
+    depends_on:
+      - usermicroservices
+      - coursesmanagmentmicroservices.api
+      - e-learning-db
   e-learning-db:
     image: mcr.microsoft.com/mssql/server:2022-latest
     ports:
@@ -47,13 +59,58 @@ services:
       - MSSQL_SA_PASSWORD=AhmedAteya12348@#
     networks:
       - eductional
+      - wishlist-network
     volumes:
       - eductional_data:/var/opt/mssql
 
+  cartmicroservices:
+    image: ahmedateya/shopping-cart
+    ports:
+      - "6000:8080"
+    networks:
+      - eductional
+  wishlistmicroservices:
+    image: wishlist-microservice:latest
+    ports:
+      - "5000:8080"
+    environment:
+      - UserMicroserviceName=usermicroservices
+      - userMicroservicePort=8080
+      - CourseMicroserviceName=coursesmanagmentmicroservices.api
+      - CourseMicroservicePort=8080 
+      - POSTGRES_HOST=wishlist-db
+      - POSTGRES_PORT=5432
+      - POSTGRES_DATABASE=wishlistdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=AhmedAtyea12348@#
+    networks:
+      - eductional
+      - wishlist-network
+    depends_on:
+      - wishlist-db
+  wishlist-db:
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_PASSWORD=AhmedAtyea12348@#
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=wishlistdb
+    volumes:
+      - ../postgres-wishlist-init:/docker-entrypoint-initdb.d
+      - wishlist_data:/var/lib/postgresql/data
+    networks:
+      - wishlist-network
+    depends_on:
+      - e-learning-db 
 networks:
   eductional:
+    driver: bridge
+  wishlist-network:
     driver: bridge
 
 volumes:
   eductional_data:
+    driver: local
+  wishlist_data:
     driver: local
