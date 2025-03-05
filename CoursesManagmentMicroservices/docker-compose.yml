@@ -50,6 +50,24 @@ services:
       - usermicroservices
       - coursesmanagmentmicroservices.api
       - e-learning-db
+  reviewmicroservice:
+    image: review-microservice:latest
+    ports:
+      - "4000:8080"
+    environment:
+      - UserMicroserviceName=usermicroservices
+      - userMicroservicePort=8080
+      - CourseMicroserviceName=coursesmanagmentmicroservices.api
+      - CourseMicroservicePort=8080
+      - MSSQL_SERVER=e-learning-db
+      - MSSQL_DB=Eductional-Reviews-DB
+      - MSSQL_PASSWORD=AhmedAteya12348@#
+    networks:
+      - eductional
+    depends_on:
+      - usermicroservices
+      - coursesmanagmentmicroservices.api
+      - e-learning-db
   e-learning-db:
     image: mcr.microsoft.com/mssql/server:2022-latest
     ports:

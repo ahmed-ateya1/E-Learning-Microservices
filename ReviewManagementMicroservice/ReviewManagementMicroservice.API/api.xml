@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ReviewManagementMicroservice.API</name>
+    </assembly>
+    <members>
+        <member name="T:ReviewManagementMicroservice.API.Controllers.ReviewController">
+            <summary>
+            Provides API endpoints for managing reviews in the review management microservice.
+            </summary>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.#ctor(ReviewManagementMicroservice.Core.ServiceContract.IReviewService,Microsoft.Extensions.Logging.ILogger{ReviewManagementMicroservice.API.Controllers.ReviewController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:ReviewManagementMicroservice.API.Controllers.ReviewController"/> class.
+            </summary>
+            <param name="reviewService">The service responsible for review operations.</param>
+            <param name="logger">The logger instance for logging controller activities.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="reviewService"/> or <paramref name="logger"/> is null.</exception>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.AddReview(ReviewManagementMicroservice.Core.Dtos.ReviewAddRequest)">
+            <summary>
+            Adds a new review for a user and course.
+            </summary>
+            <param name="request">The request containing review details, including user ID and course ID.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> with the created review if successful,
+            or an error response if the request is invalid or the operation fails.
+            </returns>
+            <response code="201">Returns the newly created review.</response>
+            <response code="400">Returns if the request is invalid (e.g., null request).</response>
+            <response code="500">Returns if an internal server error occurs during review creation.</response>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.UpdateReview(ReviewManagementMicroservice.Core.Dtos.ReviewUpdateRequest)">
+            <summary>
+            Updates an existing review for a user and course.
+            </summary>
+            <param name="request">The request containing updated review details, including review ID, user ID, and course ID.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> with the updated review if successful,
+            or an error response if the request is invalid or the operation fails.
+            </returns>
+            <response code="200">Returns the updated review.</response>
+            <response code="400">Returns if the request is invalid (e.g., null request).</response>
+            <response code="500">Returns if an internal server error occurs during review update.</response>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.DeleteReview(System.Guid)">
+            <summary>
+            Deletes a review by its ID.
+            </summary>
+            <param name="id">The unique identifier of the review to delete.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> indicating success if the review is deleted,
+            or an error response if the review is not found or cannot be deleted.
+            </returns>
+            <response code="204">Returns if the review is successfully deleted.</response>
+            <response code="404">Returns if the review is not found.</response>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.GetReview(System.Guid)">
+            <summary>
+            Retrieves a specific review by its ID.
+            </summary>
+            <param name="id">The unique identifier of the review to retrieve.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> with the review if found,
+            or an error response if the review is not found.
+            </returns>
+            <response code="200">Returns the requested review.</response>
+            <response code="404">Returns if the review is not found.</response>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.GetAllReviews">
+            <summary>
+            Retrieves all reviews.
+            </summary>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> with all reviews if found,
+            or an error response if no reviews exist.
+            </returns>
+            <response code="200">Returns the list of all reviews.</response>
+            <response code="404">Returns if no reviews are found.</response>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.GetReviewsByCourse(System.Guid)">
+            <summary>
+            Retrieves all reviews for a specific course.
+            </summary>
+            <param name="courseId">The unique identifier of the course.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> with reviews for the specified course if found,
+            or an error response if no reviews exist for the course.
+            </returns>
+            <response code="200">Returns the list of reviews for the course.</response>
+            <response code="404">Returns if no reviews are found for the specified course.</response>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.GetReviewsByUser(System.Guid)">
+            <summary>
+            Retrieves all reviews for a specific user.
+            </summary>
+            <param name="userId">The unique identifier of the user.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> with reviews for the specified user if found,
+            or an error response if no reviews exist for the user.
+            </returns>
+            <response code="200">Returns the list of reviews for the user.</response>
+            <response code="404">Returns if no reviews are found for the specified user.</response>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.GetReviewsByRating(System.Int32)">
+            <summary>
+            Retrieves all reviews with a specific rating.
+            </summary>
+            <param name="rating">The rating value to filter reviews.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> with reviews matching the specified rating if found,
+            or an error response if no reviews exist with that rating.
+            </returns>
+            <response code="200">Returns the list of reviews with the specified rating.</response>
+            <response code="404">Returns if no reviews are found for the specified rating.</response>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.GetReviewsByBaseReview(System.Guid)">
+            <summary>
+            Retrieves all reviews associated with a specific base review.
+            </summary>
+            <param name="baseReviewId">The unique identifier of the base review.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> with reviews for the specified base review if found,
+            or an error response if no reviews exist for the base review.
+            </returns>
+            <response code="200">Returns the list of reviews for the base review.</response>
+            <response code="404">Returns if no reviews are found for the specified base review.</response>
+        </member>
+        <member name="M:ReviewManagementMicroservice.API.Controllers.ReviewController.GetReviewsByDate(System.DateTime)">
+            <summary>
+            Retrieves all reviews for a specific date.
+            </summary>
+            <param name="date">The date to filter reviews.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:ReviewManagementMicroservice.Core.Dtos.ExternalDto.ApiResponse`1"/> with reviews for the specified date if found,
+            or an error response if no reviews exist for that date.
+            </returns>
+            <response code="200">Returns the list of reviews for the date.</response>
+            <response code="404">Returns if no reviews are found for the specified date.</response>
+        </member>
+    </members>
+</doc>
