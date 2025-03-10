@@ -160,6 +160,117 @@
             <response code="200">Returns when the courses are successfully retrieved.</response>
             <response code="400">Returns when an error occurs during retrieval.</response>
         </member>
+        <member name="T:CoursesManagmentMicroservices.API.Controllers.LectureController">
+            <summary>
+            Provides API endpoints for managing lectures within the course management microservice.
+            This controller handles CRUD operations and retrieval of lectures based on various criteria such as section, course, and instructor.
+            </summary>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.LectureController.#ctor(CoursesManagmentMicroservices.Core.ServiceContract.ILectureService,Microsoft.Extensions.Logging.ILogger{CoursesManagmentMicroservices.API.Controllers.LectureController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:CoursesManagmentMicroservices.API.Controllers.LectureController"/> class.
+            </summary>
+            <param name="lectureService">The service responsible for lecture-related operations.</param>
+            <param name="logger">The logger instance for logging controller activities.</param>
+            <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="lectureService"/> or <paramref name="logger"/> is null.</exception>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.LectureController.AddLecture(CoursesManagmentMicroservices.Core.Dtos.LectureDto.LectureAddRequest)">
+            <summary>
+            Adds a new lecture for a specific section, including associated file content.
+            </summary>
+            <param name="lectureAdd">The request containing lecture details and file content, submitted as a form data object.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the created lecture if successful,
+            or an error response if the request is invalid or the operation fails.
+            </returns>
+            <response code="200">Returns the newly created lecture.</response>
+            <response code="400">Returns if the request is invalid (e.g., malformed or missing data).</response>
+            <response code="404">Returns if the lecture creation fails due to a not found resource (e.g., invalid section ID).</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.LectureController.UpdateLecture(CoursesManagmentMicroservices.Core.Dtos.LectureDto.LectureUpdateRequest)">
+            <summary>
+            Updates an existing lecture for a specific section, including associated file content.
+            </summary>
+            <param name="lectureUpdate">The request containing updated lecture details and file content, submitted as a form data object.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the updated lecture if successful,
+            or an error response if the request is invalid or the operation fails.
+            </returns>
+            <response code="200">Returns the updated lecture.</response>
+            <response code="400">Returns if the request is invalid (e.g., malformed or missing data).</response>
+            <response code="404">Returns if the lecture update fails due to a not found resource (e.g., invalid lecture ID).</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.LectureController.DeleteLecture(System.Guid)">
+            <summary>
+            Deletes a lecture by its unique identifier.
+            </summary>
+            <param name="id">The unique identifier of the lecture to delete.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> indicating success if the lecture is deleted,
+            or an error response if the lecture is not found or cannot be deleted.
+            </returns>
+            <response code="200">Returns success confirmation for deletion.</response>
+            <response code="404">Returns if the lecture is not found or cannot be deleted.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.LectureController.GetLecture(System.Guid)">
+            <summary>
+            Retrieves a specific lecture by its unique identifier.
+            </summary>
+            <param name="id">The unique identifier of the lecture to retrieve.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with the lecture if found,
+            or an error response if the lecture is not found.
+            </returns>
+            <response code="200">Returns the requested lecture.</response>
+            <response code="404">Returns if the lecture is not found.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.LectureController.GetAllLectures">
+            <summary>
+            Retrieves all lectures available in the system.
+            </summary>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with all lectures if found,
+            or an error response if no lectures exist.
+            </returns>
+            <response code="200">Returns the list of all lectures.</response>
+            <response code="404">Returns if no lectures are found.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.LectureController.GetLecturesBySection(System.Guid)">
+            <summary>
+            Retrieves all lectures for a specific section.
+            </summary>
+            <param name="sectionID">The unique identifier of the section.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with lectures for the specified section if found,
+            or an error response if no lectures exist for the section.
+            </returns>
+            <response code="200">Returns the list of lectures for the section.</response>
+            <response code="404">Returns if no lectures are found for the specified section.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.LectureController.GetLecturesByCourse(System.Guid)">
+            <summary>
+            Retrieves all lectures for a specific course.
+            </summary>
+            <param name="courseID">The unique identifier of the course.</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with lectures for the specified course if found,
+            or an error response if no lectures exist for the course.
+            </returns>
+            <response code="200">Returns the list of lectures for the course.</response>
+            <response code="404">Returns if no lectures are found for the specified course.</response>
+        </member>
+        <member name="M:CoursesManagmentMicroservices.API.Controllers.LectureController.GetLecturesByInstructor(System.Guid)">
+            <summary>
+            Retrieves all lectures created by a specific instructor.
+            </summary>
+            <param name="userID">The unique identifier of the instructor (user).</param>
+            <returns>
+            Returns an <see cref="T:Microsoft.AspNetCore.Mvc.ActionResult`1"/> containing an <see cref="T:CoursesManagmentMicroservices.Core.Dtos.ApiResponse"/> with lectures for the specified instructor if found,
+            or an error response if no lectures exist for the instructor.
+            </returns>
+            <response code="200">Returns the list of lectures for the instructor.</response>
+            <response code="404">Returns if no lectures are found for the specified instructor.</response>
+        </member>
         <member name="T:CoursesManagmentMicroservices.API.Controllers.SectionController">
             <summary>
             Controller responsible for managing section-related operations such as adding, updating, deleting, and retrieving sections.
